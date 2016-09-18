@@ -2,6 +2,7 @@ Javascript manager the SRS HTTP API
 
 Remarks:
 Set the http proxy server, such as nginx
+nginx.conf
 ```
 listen       1985 ssl;
 server_name  localhost;
@@ -20,6 +21,16 @@ location /{
     proxy_set_header Host $host;
     proxy_set_header X-Real-IP $remote_addr;
     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;            
+}
+```
+
+srs.conf
+```
+http_api {
+    enabled         on;
+    listen          127.0.0.1:1984;
+    crossdomain     off;
+    
 }
 ```
 
