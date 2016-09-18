@@ -34,4 +34,4 @@ http_api {
 }
 ```
 
-Place the contents of the https://github.com/thegobot/srs/edit/2.0release/trunk/SrsHttpMamager
+Put the contents https://github.com/thegobot/srs/edit/2.0release/trunk/SrsHttpMamager into a folder on your Web server 
