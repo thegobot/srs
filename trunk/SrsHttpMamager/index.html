@@ -1,52 +1,75 @@
-<script>
-    $(function(){
-        $('.srsManagerRootEl').each(function(){
-
-            shm = new SrsHttpManager({
-                el: $(this),
-                proto: "https",
-                domain: "localhost",
-                port: 1985
-                //auth: true
-            });
-
-        })
-    })
-</script>
-
-
-<div class="srsManagerRootEl">
-
-    <h3 class="page-header">Welcome to SRS HTTP Manager!</h3>
-
-    <div class="rootObjs"></div>
-    <hr/>
-
-    <div class="toolbar">
-            <button class="btn btn-default refresh"><span class="glyphicon glyphicon-refresh"></span></button>
-    </div>
-
-    <div class="content">
-        Select one of the objects
-    </div>
-
-    <div class="ajaxLoader"><img src="/i/loader.gif" alt=""></div>
-
-    <div class="modal fade modalInfo" tabindex="-1" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Закрыть</span></button>
-                    <div class="modal-title">Info</div>
-                </div>
-                <div class="modal-body">
-                    Info
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>SRS HTTP API MANAGER</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="SrsHttpManager.css">
+        <script src="SrsHttpManager.js"></script>
+        
+    </head>
+    
+    <body>
+    
+        <script>
+            $(function(){
+                $('.srsManagerRootEl').each(function(){
+        
+                    shm = new SrsHttpManager({
+                        el: $(this),
+                        proto: "https",
+                        domain: "localhost",
+                        port: 1985
+                        //auth: true
+                    });
+        
+                })
+            })
+        </script>
+        
+        
+        <div class="srsManagerRootEl">
+        
+            <h3 class="page-header">Welcome to SRS HTTP Manager!</h3>
+        
+            <div class="rootObjs"></div>
+            <hr/>
+        
+            <div class="toolbar">
+                    <button class="btn btn-default refresh"><span class="glyphicon glyphicon-refresh"></span></button>
+            </div>
+        
+            <div class="content">
+                Select one of the objects
+            </div>
+        
+            <div class="ajaxLoader"><img src="i/loader.gif" alt=""></div>
+        
+            <div class="modal fade modalInfo" tabindex="-1" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Закрыть</span></button>
+                            <div class="modal-title">Info</div>
+                        </div>
+                        <div class="modal-body">
+                            Info
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
                 </div>
             </div>
+        
         </div>
-    </div>
-
-</div>
+        
+        
+    </body>
+</html>
