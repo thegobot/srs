@@ -23,10 +23,10 @@
         
                     shm = new SrsHttpManager({
                         el: $(this),
-                        proto: "https",
+                        proto: "http", //https
                         domain: "localhost",
                         port: 1985
-                        //auth: true
+                        //auth: true //http basic auth
                     });
         
                 })
