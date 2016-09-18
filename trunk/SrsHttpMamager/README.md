@@ -46,3 +46,6 @@ http_api {
 ```
 
 Put the contents https://github.com/thegobot/srs/edit/2.0release/trunk/SrsHttpMamager into a folder on your Web server 
+
+###Screenshoot
+![](https://s16.postimg.org/4g29fjaol/srs.png)
