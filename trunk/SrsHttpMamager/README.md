@@ -1,5 +1,9 @@
 #Javascript manager the SRS HTTP API
 
+###Features
+* Show streams, clients and all other sections
+* Stop the streams, clients
+
 ###Requirements
 * Bootstrap
 * jQuery
