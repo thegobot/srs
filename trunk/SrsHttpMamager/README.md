@@ -1,4 +1,10 @@
-Javascript manager the SRS HTTP API
+#Javascript manager the SRS HTTP API
+
+###Requirements
+* Bootstrap
+* jQuery
+
+Tested on google chrome
 
 Remarks:
 Set the http proxy server, such as nginx
