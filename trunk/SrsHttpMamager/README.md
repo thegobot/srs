@@ -8,6 +8,7 @@ Tested on google chrome
 
 Remarks:
 Set the http proxy server, such as nginx
+
 nginx.conf
 ```
 listen       1985 ssl;
